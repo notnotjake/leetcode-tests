@@ -1,0 +1,7 @@
+{
+  "name": "leetcode-tests",
+  "type": "module",
+  "devDependencies": {
+    "bun-types": "latest"
+  }
+}

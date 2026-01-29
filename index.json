@@ -1,0 +1,103 @@
+{
+  "problems": [
+    {
+      "slug": "contains-duplicate",
+      "name": "Contains Duplicate",
+      "module": "arrays-and-hashing",
+      "difficulty": "easy",
+      "tags": ["array", "hash-set"],
+      "status": "completed",
+      "dateStarted": "2025-01-24",
+      "dateCompleted": "2025-01-24",
+      "source": "leetcode"
+    },
+    {
+      "slug": "valid-anagram",
+      "name": "Valid Anagram",
+      "module": "arrays-and-hashing",
+      "difficulty": "easy",
+      "tags": ["string", "hash-map", "sorting"],
+      "status": "completed",
+      "dateStarted": "2025-01-24",
+      "dateCompleted": "2025-01-25",
+      "source": "leetcode"
+    },
+    {
+      "slug": "two-sum",
+      "name": "Two Sum",
+      "module": "arrays-and-hashing",
+      "difficulty": "easy",
+      "tags": ["array", "hash-map"],
+      "status": "completed",
+      "dateStarted": "2025-01-25",
+      "dateCompleted": "2025-01-25",
+      "source": "leetcode"
+    },
+    {
+      "slug": "group-anagrams",
+      "name": "Group Anagrams",
+      "module": "arrays-and-hashing",
+      "difficulty": "medium",
+      "tags": ["array", "hash-map", "string", "sorting"],
+      "status": "completed",
+      "dateStarted": "2025-01-26",
+      "dateCompleted": "2025-01-26",
+      "source": "leetcode"
+    },
+    {
+      "slug": "top-k-frequent-elements",
+      "name": "Top K Frequent Elements",
+      "module": "arrays-and-hashing",
+      "difficulty": "medium",
+      "tags": ["array", "hash-map", "bucket-sort", "heap"],
+      "status": "completed",
+      "dateStarted": "2025-01-26",
+      "dateCompleted": "2025-01-26",
+      "source": "leetcode"
+    },
+    {
+      "slug": "product-of-array-except-self",
+      "name": "Product of Array Except Self",
+      "module": "arrays-and-hashing",
+      "difficulty": "medium",
+      "tags": ["array", "prefix-sum"],
+      "status": "completed",
+      "dateStarted": "2025-01-27",
+      "dateCompleted": "2025-01-27",
+      "source": "leetcode"
+    },
+    {
+      "slug": "encode-decode-strings",
+      "name": "Encode and Decode Strings",
+      "module": "arrays-and-hashing",
+      "difficulty": "medium",
+      "tags": ["string", "design", "encoding"],
+      "status": "completed",
+      "dateStarted": "2025-01-27",
+      "dateCompleted": "2025-01-28",
+      "source": "leetcode"
+    },
+    {
+      "slug": "valid-sudoku",
+      "name": "Valid Sudoku",
+      "module": "arrays-and-hashing",
+      "difficulty": "medium",
+      "tags": ["array", "hash-set", "matrix"],
+      "status": "completed",
+      "dateStarted": "2025-01-28",
+      "dateCompleted": "2025-01-28",
+      "source": "leetcode"
+    },
+    {
+      "slug": "longest-consecutive-sequence",
+      "name": "Longest Consecutive Sequence",
+      "module": "arrays-and-hashing",
+      "difficulty": "medium",
+      "tags": ["array", "hash-set", "union-find"],
+      "status": "completed",
+      "dateStarted": "2025-01-28",
+      "dateCompleted": "2025-01-29",
+      "source": "leetcode"
+    }
+  ]
+}
