@@ -1,4 +1,4 @@
-const roadmap = require("./roadmap.json");
+const roadmap = require("../roadmap.json");
 
 let totalSolved = 0;
 let totalProblems = 0;
