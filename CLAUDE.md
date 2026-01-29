@@ -15,7 +15,10 @@ leetcode-tests/
 │   │       └── notes.md            # User's notes/lessons after solving
 │   └── misc/                       # One-off problems not part of a module
 │       └── <problem-name>/
-├── index.json                      # Problem history & metadata
+├── roadmap.json                    # NeetCode roadmap with progress tracking
+├── scripts/                        # Utility scripts
+│   ├── progress.ts                 # View progress (bun scripts/progress.ts)
+│   └── reset.ts                    # Reset all progress (bun scripts/reset.ts)
 └── CLAUDE.md                       # This file
 ```
 
@@ -38,7 +41,7 @@ Claude will:
 2. Write `README.md` with problem description, examples, and constraints
 3. Write `solution.ts` with function signature and starter code
 4. Write `solution.test.ts` with test cases using Bun's test runner
-5. Update `index.json` with problem metadata
+5. Update `roadmap.json` to mark problem as in-progress
 
 ### Solving
 
@@ -52,7 +55,7 @@ Claude will:
 
 When solved:
 1. User adds notes to `notes.md` (lessons learned, time/space complexity, alternative approaches)
-2. Claude marks problem as "completed" in `index.json`
+2. Claude marks problem as "completed" in `roadmap.json`
 
 ## Think-Aloud Mode
 
@@ -86,28 +89,6 @@ When user says:
 - **"solution"**: Show a reference solution (only after user has attempted)
 - **"list"** or **"history"**: Show all problems and their status
 - **"new problem"**: Start a new problem
-
-## Index Format
-
-`index.json` tracks all problems:
-
-```json
-{
-  "problems": [
-    {
-      "slug": "contains-duplicate",
-      "name": "Contains Duplicate",
-      "module": "arrays-and-hashing",
-      "difficulty": "easy",
-      "tags": ["array", "hash-set"],
-      "status": "in-progress",
-      "dateStarted": "2025-01-24",
-      "dateCompleted": null,
-      "source": "leetcode"
-    }
-  ]
-}
-```
 
 ## Test Format
 

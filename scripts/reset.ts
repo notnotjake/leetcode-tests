@@ -4,7 +4,6 @@ import { join } from "path";
 const rootDir = join(import.meta.dir, "..");
 const problemsDir = join(rootDir, "problems");
 const roadmapPath = join(rootDir, "roadmap.json");
-const indexPath = join(rootDir, "index.json");
 
 // Clear problems directory
 if (existsSync(problemsDir)) {
@@ -21,10 +20,5 @@ for (const mod of Object.values(roadmap.modules) as any[]) {
 }
 writeFileSync(roadmapPath, JSON.stringify(roadmap, null, 2) + "\n");
 console.log("✓ Reset all problems in roadmap.json to not-started");
-
-// Reset index.json
-const emptyIndex = { problems: [] };
-writeFileSync(indexPath, JSON.stringify(emptyIndex, null, 2) + "\n");
-console.log("✓ Cleared index.json");
 
 console.log("\nReset complete. Ready for a fresh start.");
