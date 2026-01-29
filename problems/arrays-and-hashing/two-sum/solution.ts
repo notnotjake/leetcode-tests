@@ -1,5 +1,4 @@
 export function twoSum(nums: number[], target: number): number[] {
-	console.log("===TEST====");
 	const numbers = new Map<number, number>();
 
 	for (const [index, value] of nums.entries()) {

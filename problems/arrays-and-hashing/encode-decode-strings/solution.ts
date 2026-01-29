@@ -33,9 +33,3 @@ export function decode(s: string): string[] {
 
 	return decoded;
 }
-
-const encodingResult = encode(["lint", "code", "love", "you"]);
-
-console.log(encodingResult);
-
-console.log(decode(encodingResult));

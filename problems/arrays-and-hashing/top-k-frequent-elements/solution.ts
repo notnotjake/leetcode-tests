@@ -1,6 +1,4 @@
 export function topKFrequent(nums: number[], k: number): number[] {
-	console.log(nums, k);
-
 	// Create frequency map of all integers
 	const freq = new Map<number, number>();
 	for (const n of nums) {
