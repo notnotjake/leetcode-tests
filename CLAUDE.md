@@ -31,12 +31,14 @@ Problems are grouped into modules following the NeetCode roadmap. See `roadmap.j
 ### Starting a Problem
 
 User can:
+
 - Specify a module and problem name
 - Paste a problem from LeetCode or other source
 - Describe a problem they want to practice
 - Ask for a recommendation by module or difficulty
 
 Claude will:
+
 1. Create `problems/<module>/<problem-name>/` directory
 2. Write `README.md` with problem description, examples, and constraints
 3. Write `solution.ts` with function signature and starter code
@@ -54,6 +56,7 @@ Claude will:
 ### Completing
 
 When solved:
+
 1. User adds notes to `notes.md` (lessons learned, time/space complexity, alternative approaches)
 2. Claude marks problem as "completed" in `roadmap.json`
 
@@ -84,6 +87,7 @@ The struggle of debugging is where real learning happens. Don't shortcut it.
 ## Commands
 
 When user says:
+
 - **"test"** or **"check"** or **"run"**: Run tests for the current problem
 - **"hint"**: Provide a hint without giving away the solution (only if explicitly requested)
 - **"solution"**: Show a reference solution (only after user has attempted)
@@ -95,14 +99,14 @@ When user says:
 Tests use Bun's built-in test runner:
 
 ```typescript
-import { expect, test, describe } from "bun:test";
-import { functionName } from "./solution";
+import { expect, test, describe } from 'bun:test'
+import { functionName } from './solution'
 
-describe("Problem Name", () => {
-  test("example 1", () => {
-    expect(functionName(input)).toEqual(expectedOutput);
-  });
-});
+describe('Problem Name', () => {
+	test('example 1', () => {
+		expect(functionName(input)).toEqual(expectedOutput)
+	})
+})
 ```
 
 ## Running Tests
@@ -114,6 +118,7 @@ bun test problems/<module>/<problem-name>/solution.test.ts
 ## Test Result Display
 
 When showing test results, format them as a clear table with:
+
 - Pass/fail indicator (✓ or ✗)
 - Test name
 - Input values
@@ -121,6 +126,7 @@ When showing test results, format them as a clear table with:
 - Actual output (for failures)
 
 Example format:
+
 ```
 **Results: 4 passed, 2 failed**
 

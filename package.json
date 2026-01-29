@@ -1,7 +1,9 @@
 {
-  "name": "leetcode-tests",
-  "type": "module",
-  "devDependencies": {
-    "bun-types": "latest"
-  }
+	"name": "leetcode-tests",
+	"type": "module",
+	"devDependencies": {
+		"bun-types": "latest",
+		"prettier": "^3.8.1",
+		"typescript": "^5.9.3"
+	}
 }
