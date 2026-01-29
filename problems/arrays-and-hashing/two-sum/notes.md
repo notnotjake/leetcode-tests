@@ -1,6 +1,7 @@
 # Notes
 
 ## Approach
+
 - Hash map: store each number as key, its index as value
 - For each element, check if complement (target - current) exists in map
 - Time: O(n), Space: O(n)
@@ -9,7 +10,7 @@
 
 **Be explicit when checking for undefined.** Using `if (value)` fails when `value` is `0` or `""` because those are falsey. Use `if (value !== undefined)` or `map.has(key)` instead.
 
-**Build the map as you iterate, not upfront.** By adding to the map *after* checking for the complement, you naturally avoid comparing an element to itself, and you guarantee the earlier index is already stored when you find a match.
+**Build the map as you iterate, not upfront.** By adding to the map _after_ checking for the complement, you naturally avoid comparing an element to itself, and you guarantee the earlier index is already stored when you find a match.
 
 ## Alternative: Two Pointers
 

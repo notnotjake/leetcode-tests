@@ -16,6 +16,7 @@ Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
 ```
 
 **Explanation:** The groupings are:
+
 - "bat" has no anagrams
 - "nat" and "tan" are anagrams
 - "ate", "eat", and "tea" are anagrams

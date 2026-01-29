@@ -12,11 +12,13 @@
 A hash table with O(1) average time for operations, O(n) space.
 
 Methods:
+
 - `map.get(key)` - O(1) - retrieve value
 - `map.set(key, value)` - O(1) - store value
 - `map.has(key)` - O(1) - check if key exists
 
 Common pattern for counting:
+
 ```typescript
 map.set(char, (map.get(char) ?? 0) + 1)
 ```

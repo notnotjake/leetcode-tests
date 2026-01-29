@@ -5,8 +5,8 @@
 Used a Set to automatically deduplicate the array, then compared the Set size to the original array length. If the Set is smaller, duplicates were dropped, meaning duplicates existed.
 
 ```typescript
-const elementsSet = new Set(nums);
-return elementsSet.size !== nums.length;
+const elementsSet = new Set(nums)
+return elementsSet.size !== nums.length
 ```
 
 ## Time Complexity
@@ -20,7 +20,7 @@ O(n) - In the worst case (no duplicates), the Set holds all n elements.
 ## Key Insights
 
 - Sets inherently reject duplicates - this is the core insight that makes the solution elegant
-- Comparing lengths is enough; we don't need to know *which* element was duplicated
+- Comparing lengths is enough; we don't need to know _which_ element was duplicated
 - The problem only asks for a boolean, so we don't need to track anything beyond existence of duplicates
 
 ## What I Learned
