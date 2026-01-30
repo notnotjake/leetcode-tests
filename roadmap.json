@@ -23,7 +23,7 @@
       "prerequisites": ["arrays-and-hashing"],
       "unlocks": ["binary-search", "sliding-window", "linked-list"],
       "problems": [
-        { "slug": "valid-palindrome", "name": "Valid Palindrome", "difficulty": "easy", "status": "not-started" },
+        { "slug": "valid-palindrome", "name": "Valid Palindrome", "difficulty": "easy", "status": "completed" },
         { "slug": "two-sum-ii", "name": "Two Sum II", "difficulty": "medium", "status": "not-started" },
         { "slug": "3sum", "name": "3Sum", "difficulty": "medium", "status": "not-started" },
         { "slug": "container-with-most-water", "name": "Container With Most Water", "difficulty": "medium", "status": "not-started" },
