@@ -59,6 +59,7 @@ When solved:
 
 1. User adds notes to `notes.md` (lessons learned, time/space complexity, alternative approaches)
 2. Claude marks problem as "completed" in `roadmap.json`
+3. Claude commits the problem with message format `module: problem` (e.g., "two pointers: valid palindrome")
 
 ## Think-Aloud Mode
 
@@ -71,6 +72,7 @@ User may think out loud while solving problems. During this phase:
 
 After user submits a solution (says "test", "check", or "run"):
 
+- First, read the user's `solution.ts` file to understand their approach. Do not comment on their code, but use this context to better understand follow-up questions.
 - Run the tests and display results in a user-friendly format (see Test Result Display below)
 - **If tests fail:** Show the formatted results only. NO hints, NO explanations, NO commentary, NO conclusions about patterns in failures. Let user figure it out themselves - this is a critical part of learning.
 - **If all tests pass:** Do NOT immediately explain or reflect. Instead, use a Socratic approach:
