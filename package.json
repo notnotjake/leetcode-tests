@@ -1,6 +1,10 @@
 {
 	"name": "leetcode-tests",
 	"type": "module",
+	"scripts": {
+		"progress": "bun scripts/progress.ts",
+		"reset": "bun scripts/reset.ts"
+	},
 	"devDependencies": {
 		"bun-types": "latest",
 		"prettier": "^3.8.1",
