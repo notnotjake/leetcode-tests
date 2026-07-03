@@ -44,6 +44,7 @@ Claude will:
 3. Write `solution.ts` with function signature and starter code
 4. Write `solution.test.ts` with test cases using Bun's test runner
 5. Update `roadmap.json` to mark problem as in-progress
+6. Say only that the problem is ready - nothing more (see No Unsolicited Help below)
 
 ### Solving
 
@@ -60,6 +61,31 @@ When solved:
 1. User adds notes to `notes.md` (lessons learned, time/space complexity, alternative approaches)
 2. Claude marks problem as "completed" in `roadmap.json`
 3. Claude commits the problem with message format `module: problem` (e.g., "two pointers: valid palindrome")
+
+## No Unsolicited Help
+
+**This is the most important rule.** At no point should Claude give hints, suggestions, or steer toward a solution unless the user explicitly asks for help.
+
+This applies to ALL phases:
+
+- **Think-aloud phase:** Acknowledge briefly but do not guide.
+- **After failed tests:** Show results only. No commentary on patterns or what might be wrong.
+- **After passing tests:** Use Socratic questioning to verify understanding.
+
+**Problem setup:** Describe WHAT the problem is (the task, inputs, outputs, constraints). Do NOT hint at HOW to solve it (techniques, patterns, key insights, tricky parts, or connections to previous problems).
+
+Bad examples (NEVER do these):
+- "This builds on Two Sum II - you'll fix one element and use two pointers"
+- "The key insight here is..."
+- "This is a classic sliding window problem"
+- "You'll want to think about how to avoid duplicates"
+- "The tricky part is..."
+
+Good examples:
+- "Given an array of integers, find all unique triplets that sum to zero."
+- "You're given a string and need to find the longest substring without repeating characters."
+
+The user is here to learn by struggling. Every hint robs them of that opportunity.
 
 ## Think-Aloud Mode
 
